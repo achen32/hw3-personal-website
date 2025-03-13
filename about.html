@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>About</title>
+  </head>
+  <body>
+    <div class="topnav">
+      <a id="homeNav">Home</a>
+      <a id="aboutNav">About</a>
+    </div>
+    <script>
+      const aboutButton = document.getElementById("aboutNav");
+      aboutButton.addEventListener("click", function () {
+        window.location.href = "about.html";
+      });
+
+      const homeButton = document.getElementById("homeNav");
+      homeButton.addEventListener("click", function () {
+        window.location.href = "index.html";
+      });
+    </script>
+    <div class="aboutContainer">
+      <h2>My Interests and Hobbies</h2>
+      <p>
+        I'm a computer science student with a
+        passion for music, staying active, and solving puzzles. I've played
+        piano for over a decade, and music has always been a creative outlet for
+        me. When I'm not coding or playing an instrument, I love to stay
+        active—whether it's on the court or in the studio. I played tennis
+        throughout high school and now enjoy playing pickleball and practicing
+        hot yoga to stay energized. Beyond movement and music, I  enjoy
+         brain teasers and casual reading. I love playing the New York Times games, 
+        and I appreciate
+        anything that keeps my mind engaged.
+      </p>
+      <p>Some books I've been reading recently:</p>
+      <ul>
+        <li>Dune by Frank Herbert</li>
+        <li>When Breath Becomes Air by Paul Kalanithi</li>
+        <li>The Song of Achilles by Madeline Miller</li>
+      </ul>
+
+      <img
+        src="https://www.news-leader.com/gcdn/-mm-/c7916574e011bf073d8a1ca8f27eb1d8f582e876/c=0-133-2624-1615/local/-/media/2016/06/14/Springfield/Springfield/636015219467226034-Pickleball.jpg?width=660&height=371&fit=crop&format=pjpg&auto=webp"
+        alt="cat"
+      />
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="test.js"></script>
+  </body>
+</html>

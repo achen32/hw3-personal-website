@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <div class="topnav">
+      <a data-href="index.html">Home</a>
+      <a data-href="about.html">About</a>
+    </div>
+
+    <script>
+      document.querySelector(".topnav").addEventListener("click", (event) => {
+        if (event.target.matches("a[data-href]")) {
+          window.location.href = event.target.getAttribute("data-href");
+        }
+      });
+    </script>
+    <div class="homeContainer">
+      <h1>Welcome to My Website</h1>
+            <img
+        src="https://graymalin.com/cdn/shop/products/Boston_Harbor_e188dfcf-82ef-4a3d-8616-8e0e982295b9.jpg?v=1659983574&width=533"
+        alt="Boston waterfront"
+      />
+      <p>
+        Hello World! My name is Aretha, and welcome to my small corner of the
+        internet. I am a senior at Northeastern University in Boston studying 
+        computer science with a minor in public health. Originally from the Bay Area 
+        in California, I've always been surrounded by and fascinated by technology 
+        and how it shapes the world around us. My passion lies in 
+        software development, and I enjoy building projects that challenge me to think critically and creatively.
+        This website is a place where I share my projects, interests, and experiences. 
+        Feel free to explore and connect with me!
+
+
+  
+    </div>
+       <div class="contact">
+        <h3>Contact Me</h3>
+        <a href="mailto:aretha.chen@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/aretha-chen/">LinkedIn</a>
+        <a href="https://github.com/achen32">Github</a>
+
+      </div>
+  </body>
+</html>
